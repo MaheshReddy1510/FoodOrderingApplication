@@ -1,7 +1,10 @@
-﻿@{
+﻿@model FoodOrderingApplication.Models.AboutModel
+@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<hggroup class="title">
+    <h2>@ViewBag.Title.</h2>
+    <h3>@Model.Name</h3>
+</hggroup>
 
-<p>Use this area to provide additional information.</p>
+<div>Location:@Model.Location</div>

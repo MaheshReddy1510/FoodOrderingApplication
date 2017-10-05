@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodOrderingApplication.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,9 +16,12 @@ namespace FoodOrderingApplication.Controllers
 
         public ActionResult About()
         {
+            var model = new AboutModel();
+            model.Name = "Mahesh";
+            model.Location = "Pennsylvania, USA";
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(model);
         }
 
         public ActionResult Contact()
